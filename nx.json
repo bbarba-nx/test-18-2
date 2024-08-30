@@ -17,17 +17,11 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     },
-    "@nx/vite:test": {
-      "cache": true,
-      "inputs": ["default", "^production"]
-    }
+    "@nx/vite:test": { "cache": true, "inputs": ["default", "^production"] }
   },
   "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    }
-  ]
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } }
+  ],
+  "nxCloudAccessToken": "ZDE0NTYwYjctNjk0OS00ODE3LThiMjMtODRmYTg0ZjQ1ZWQxfHJlYWQtd3JpdGU=",
+  "nxCloudUrl": "https://staging.nx.app"
 }
